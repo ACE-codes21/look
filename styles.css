@@ -12,6 +12,10 @@ body {
     line-height: 1.6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wiki-container {
     display: flex;
     min-height: 100vh;
@@ -25,6 +29,7 @@ body {
     position: fixed;
     height: 100vh;
     overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
 }
 
 .logo {
@@ -36,15 +41,21 @@ body {
 .logo h1 {
     font-size: 1.5em;
     color: #202122;
+    margin-bottom: 5px;
 }
 
 .logo p {
     font-size: 0.9em;
     color: #54595d;
+    font-style: italic;
 }
 
 .nav-menu ul {
     list-style: none;
+}
+
+.nav-menu li {
+    margin-bottom: 8px;
 }
 
 .nav-menu a {
@@ -53,66 +64,118 @@ body {
     display: block;
     padding: 8px 10px;
     border-radius: 4px;
+    transition: all 0.2s;
+    font-size: 0.95em;
 }
 
 .nav-menu a:hover {
     background-color: #eaecf0;
+    color: #0b0080;
+}
+
+.nav-menu i {
+    margin-right: 8px;
+    width: 18px;
+    display: inline-block;
 }
 
 .main-content {
     margin-left: 260px;
     flex: 1;
     padding: 20px;
+    max-width: calc(100% - 260px);
+    width: 100%;
 }
 
 .page-header {
     background-color: #fff;
     padding: 30px;
     border: 1px solid #a2a9b1;
+    border-radius: 4px;
     margin-bottom: 20px;
 }
 
 .page-header h1 {
     font-size: 2.5em;
+    color: #202122;
     border-bottom: 1px solid #a2a9b1;
     padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #54595d;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 .wiki-article {
     background-color: #fff;
     border: 1px solid #a2a9b1;
+    border-radius: 4px;
     padding: 30px;
     margin-bottom: 20px;
+    scroll-margin-top: 20px;
 }
 
 .article-title {
     font-size: 2em;
+    color: #202122;
     border-bottom: 1px solid #a2a9b1;
     padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.article-content {
+    margin-bottom: 30px;
 }
 
 .article-text {
     margin: 15px 0;
     text-align: justify;
     line-height: 1.7;
+    font-size: 1.05em;
 }
 
 .article-media {
     width: 100%;
+    max-width: 100%;
     max-height: 600px;
     border: 1px solid #a2a9b1;
+    border-radius: 4px;
     margin: 20px 0;
+    display: block;
+    object-fit: contain;
 }
 
 .profile-section {
     display: flex;
     gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .profile-image {
     width: 200px;
     height: 200px;
+    border-radius: 4px;
     border: 1px solid #a2a9b1;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.05em;
 }
 
 .comment-section {
@@ -121,9 +184,21 @@ body {
     border-top: 2px solid #eaecf0;
 }
 
+.comment-section h3 {
+    font-size: 1.3em;
+    color: #202122;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.comment-section h3 i {
+    margin-right: 8px;
+}
+
 .comment-form {
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .comment-input {
@@ -131,6 +206,14 @@ body {
     padding: 12px;
     border: 1px solid #a2a9b1;
     border-radius: 4px;
+    font-size: 1em;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.comment-input:focus {
+    outline: none;
+    border-color: #0645ad;
+    box-shadow: 0 0 0 2px rgba(6, 69, 173, 0.1);
 }
 
 .post-btn {
@@ -140,6 +223,20 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.post-btn:hover {
+    background-color: #0b0080;
+}
+
+.post-btn i {
+    margin-right: 5px;
+}
+
+.comments-list {
+    margin-top: 20px;
 }
 
 .comment {
@@ -147,11 +244,77 @@ body {
     padding: 15px;
     margin: 10px 0;
     border-left: 3px solid #0645ad;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.comment strong {
+    color: #0645ad;
+    margin-right: 8px;
+}
+
+.comment-time {
+    font-size: 0.85em;
+    color: #54595d;
+    margin-left: 8px;
 }
 
 .page-footer {
     background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    border-radius: 4px;
     padding: 20px;
     text-align: center;
+    color: #54595d;
+    font-size: 0.9em;
     margin-top: 40px;
+}
+
+.page-footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #a2a9b1;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .page-header h1 {
+        font-size: 1.8em;
+    }
+
+    .article-title {
+        font-size: 1.5em;
+    }
+
+    .wiki-container {
+        flex-direction: column;
+    }
+}
+
+::selection {
+    background-color: #0645ad;
+    color: white;
 }
