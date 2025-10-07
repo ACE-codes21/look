@@ -1,64 +1,334 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Clone - luuk_2.0</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>luuk_2.0</h1>
-            <p class="subtitle">Welcome to my Instagram page!</p>
-        </header>
+<!DOCTYPE html><!DOCTYPE html>
 
-        <main>
-            <section class="profile">
-                <div class="profile-info">
-                    <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Profile Picture" class="profile-pic">
-                    <h2>luuk_2.0</h2>
-                    <p>Bio: Just a person sharing moments.</p>
-                </div>
-            </section>
+<html lang="en"><html lang="en">
 
-            <section class="media-gallery">
-                <h2>Media</h2>
-                <div class="media-container">
-                    <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Media Image" class="media-item">
-                    <div class="media-comments">
+<head><head>
+
+    <meta charset="UTF-8">    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>luuk_2.0 - Personal Encyclopedia</title>    <title>Instagram Clone - luuk_2.0</title>
+
+    <link rel="stylesheet" href="styles.css">    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head></head>
+
+<body><body>
+
+    <div class="wiki-container">    <div class="container">
+
+        <!-- Sidebar Navigation -->        <header>
+
+        <aside class="sidebar">            <h1>luuk_2.0</h1>
+
+            <div class="logo">            <p class="subtitle">Welcome to my  page!</p>
+
+                <h1><i class="fas fa-book"></i> luuk_2.0</h1>        </header>
+
+                <p>Personal Encyclopedia</p>
+
+            </div>        <main>
+
+            <nav class="nav-menu">            <section class="profile">
+
+                <ul>                <div class="profile-info">
+
+                    <li><a href="#profile"><i class="fas fa-user"></i> About Me</a></li>                    <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Profile Picture" class="profile-pic">
+
+                    <li><a href="#media1"><i class="fas fa-image"></i> Gallery Item 1</a></li>                    <h2>luuk_2.0</h2>
+
+                    <li><a href="#media2"><i class="fas fa-video"></i> Video Story 1</a></li>                    <p>Bio: Just a person sharing moments.</p>
+
+                    <li><a href="#media3"><i class="fas fa-video"></i> Video Story 2</a></li>                </div>
+
+                    <li><a href="#media4"><i class="fas fa-video"></i> Video Story 3</a></li>            </section>
+
+                    <li><a href="#media5"><i class="fas fa-video"></i> Video Story 4</a></li>
+
+                    <li><a href="#media6"><i class="fas fa-video"></i> Video Story 5</a></li>            <section class="media-gallery">
+
+                    <li><a href="#media7"><i class="fas fa-video"></i> Video Story 6</a></li>                <h2>Media</h2>
+
+                </ul>                <div class="media-container">
+
+            </nav>                    <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Media Image" class="media-item">
+
+        </aside>                    <div class="media-comments">
+
                         <h3><i class="fas fa-comment"></i> Comments</h3>
-                        <div class="comment-form-mini">
-                            <input type="text" placeholder="Add a comment..." class="comment-input-mini">
-                            <button class="post-btn-mini"><i class="fas fa-paper-plane"></i></button>
-                        </div>
-                        <div class="comments-mini-list"></div>
-                    </div>
+
+        <!-- Main Content -->                        <div class="comment-form-mini">
+
+        <main class="main-content">                            <input type="text" placeholder="Add a comment..." class="comment-input-mini">
+
+            <header class="page-header">                            <button class="post-btn-mini"><i class="fas fa-paper-plane"></i></button>
+
+                <h1>Welcome to My Personal Encyclopedia</h1>                        </div>
+
+                <p class="subtitle">A collection of moments, stories, and memories</p>                        <div class="comments-mini-list"></div>
+
+            </header>                    </div>
+
                 </div>
 
-                <div class="media-container">
-                    <video controls class="media-item">
+            <!-- Profile Section -->
+
+            <article id="profile" class="wiki-article">                <div class="media-container">
+
+                <h2 class="article-title">About Me</h2>                    <video controls class="media-item">
+
+                <div class="article-content">                        <source src="./public/assets/VID-20251006-WA0045.mp4" type="video/mp4">
+
+                    <div class="profile-section">                        Your browser does not support the video tag.
+
+                        <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Profile Picture" class="profile-image">                    </video>
+
+                        <div class="profile-text">                    <div class="media-comments">
+
+                            <p>Hello! Welcome to my personal encyclopedia. This is a space where I document my journey, share moments, and connect with friends and family.</p>                        <h3><i class="fas fa-comment"></i> Comments</h3>
+
+                            <p>Here you'll find a collection of images and videos that tell my story. Each entry includes detailed descriptions and a space for you to leave your thoughts and comments.</p>                        <div class="comment-form-mini">
+
+                            <p><strong>Interests:</strong> Photography, Videography, Travel, Technology</p>                            <input type="text" placeholder="Add a comment..." class="comment-input-mini">
+
+                            <p><strong>Location:</strong> Exploring the world</p>                            <button class="post-btn-mini"><i class="fas fa-paper-plane"></i></button>
+
+                        </div>                        </div>
+
+                    </div>                        <div class="comments-mini-list"></div>
+
+                </div>                    </div>
+
+                <div class="comment-section">                </div>
+
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+
+                    <div class="comment-form">                <!-- Additional media items can be added here -->
+
+                        <input type="text" placeholder="Join the discussion..." class="comment-input">            </section>
+
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>        </main>
+
+                    </div>
+
+                    <div class="comments-list"></div>        <footer>
+
+                </div>            <p>&copy; 2025 Instagram Clone. All rights reserved.</p>
+
+            </article>        </footer>
+
+    </div>
+
+            <!-- Media Article 1 -->
+
+            <article id="media1" class="wiki-article">    <script src="script.js"></script>
+
+                <h2 class="article-title">Gallery Snapshot</h2></body>
+
+                <div class="article-content"></html>
+                    <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Gallery Image" class="article-media">
+                    <p class="article-text">
+                        This photograph captures a special moment in time. Every picture tells a story, and this one is no exception. 
+                        The composition, lighting, and subject matter all come together to create a memorable snapshot that will be 
+                        cherished for years to come.
+                    </p>
+                    <p class="article-text">
+                        Photography is not just about capturing what we see, but about preserving how we feel in that moment. 
+                        This image represents a milestone, a memory, and a piece of personal history that deserves to be documented 
+                        and shared.
+                    </p>
+                </div>
+                <div class="comment-section">
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="Share your thoughts..." class="comment-input">
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>
+                    </div>
+                    <div class="comments-list"></div>
+                </div>
+            </article>
+
+            <!-- Media Article 2 -->
+            <article id="media2" class="wiki-article">
+                <h2 class="article-title">Video Chronicle: Part 1</h2>
+                <div class="article-content">
+                    <video controls class="article-media">
                         <source src="./public/assets/VID-20251006-WA0045.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="media-comments">
-                        <h3><i class="fas fa-comment"></i> Comments</h3>
-                        <div class="comment-form-mini">
-                            <input type="text" placeholder="Add a comment..." class="comment-input-mini">
-                            <button class="post-btn-mini"><i class="fas fa-paper-plane"></i></button>
-                        </div>
-                        <div class="comments-mini-list"></div>
-                    </div>
+                    <p class="article-text">
+                        This video captures an important moment in my journey. Moving images have a unique power to transport us 
+                        back in time, allowing us to relive experiences with sight and sound. This particular recording holds 
+                        special significance as it documents a meaningful event.
+                    </p>
+                    <p class="article-text">
+                        Videos provide context that photographs sometimes cannot convey. The movement, the ambient sounds, and 
+                        the flow of action all contribute to a richer storytelling experience. Take a moment to watch and immerse 
+                        yourself in this captured memory.
+                    </p>
                 </div>
+                <div class="comment-section">
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="What did you think?" class="comment-input">
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>
+                    </div>
+                    <div class="comments-list"></div>
+                </div>
+            </article>
 
-                <!-- Additional media items can be added here -->
-            </section>
+            <!-- Media Article 3 -->
+            <article id="media3" class="wiki-article">
+                <h2 class="article-title">Video Chronicle: Part 2</h2>
+                <div class="article-content">
+                    <video controls class="article-media">
+                        <source src="./public/assets/VID-20251006-WA0046.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="article-text">
+                        Continuing our visual journey, this second video entry explores another facet of the story. Each video 
+                        in this collection builds upon the previous one, creating a narrative tapestry that documents real 
+                        experiences and genuine moments.
+                    </p>
+                    <p class="article-text">
+                        The beauty of video documentation lies in its ability to capture the essence of a moment—not just what 
+                        happened, but how it felt to be there. This recording preserves those intangible qualities that make 
+                        memories truly special.
+                    </p>
+                </div>
+                <div class="comment-section">
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="Leave a comment..." class="comment-input">
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>
+                    </div>
+                    <div class="comments-list"></div>
+                </div>
+            </article>
+
+            <!-- Media Article 4 -->
+            <article id="media4" class="wiki-article">
+                <h2 class="article-title">Video Chronicle: Part 3</h2>
+                <div class="article-content">
+                    <video controls class="article-media">
+                        <source src="./public/assets/VID-20251006-WA0047.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="article-text">
+                        This third installment in our video series showcases yet another memorable moment. As we progress through 
+                        these visual records, patterns begin to emerge—themes of connection, experience, and personal growth 
+                        that define this collection.
+                    </p>
+                    <p class="article-text">
+                        Each video serves as a time capsule, preserving not just the visual and auditory elements of a moment, 
+                        but also the emotions and atmosphere that surrounded it. These recordings are more than just files; 
+                        they are windows into the past.
+                    </p>
+                </div>
+                <div class="comment-section">
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="Add to the discussion..." class="comment-input">
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>
+                    </div>
+                    <div class="comments-list"></div>
+                </div>
+            </article>
+
+            <!-- Media Article 5 -->
+            <article id="media5" class="wiki-article">
+                <h2 class="article-title">Video Chronicle: Part 4</h2>
+                <div class="article-content">
+                    <video controls class="article-media">
+                        <source src="./public/assets/WhatsApp Video 2025-10-06 at 3.04.38 PM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="article-text">
+                        As our journey continues, this video brings us closer to understanding the full narrative. Documentation 
+                        through video allows us to share experiences with others in a way that bridges the gap between being 
+                        there and hearing about it secondhand.
+                    </p>
+                    <p class="article-text">
+                        The fourth entry in this series represents another chapter in an ongoing story. Like pages in a book, 
+                        each video adds depth and dimension to the overall narrative, creating a comprehensive record of 
+                        experiences worth remembering.
+                    </p>
+                </div>
+                <div class="comment-section">
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="Your thoughts?" class="comment-input">
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>
+                    </div>
+                    <div class="comments-list"></div>
+                </div>
+            </article>
+
+            <!-- Media Article 6 -->
+            <article id="media6" class="wiki-article">
+                <h2 class="article-title">Video Chronicle: Part 5</h2>
+                <div class="article-content">
+                    <video controls class="article-media">
+                        <source src="./public/assets/WhatsApp Video 2025-10-06 at 3.04.39 PM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="article-text">
+                        This penultimate video entry showcases the richness of visual storytelling. Through careful curation 
+                        and documentation, we create a library of moments that can be revisited and shared with future generations.
+                    </p>
+                    <p class="article-text">
+                        The power of video lies not just in what it shows, but in what it makes us feel and remember. This 
+                        recording is part of a larger tapestry of memories, each thread contributing to the complete picture 
+                        of a life well-lived and thoroughly documented.
+                    </p>
+                </div>
+                <div class="comment-section">
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="Join the conversation..." class="comment-input">
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>
+                    </div>
+                    <div class="comments-list"></div>
+                </div>
+            </article>
+
+            <!-- Media Article 7 -->
+            <article id="media7" class="wiki-article">
+                <h2 class="article-title">Video Chronicle: Part 6</h2>
+                <div class="article-content">
+                    <video controls class="article-media">
+                        <source src="./public/assets/WhatsApp Video 2025-10-06 at 3.04.41 PM (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="article-text">
+                        We conclude this visual journey with a final video that encapsulates the spirit of this entire collection. 
+                        Each entry has contributed to a comprehensive documentation of moments, experiences, and memories that 
+                        deserve to be preserved and celebrated.
+                    </p>
+                    <p class="article-text">
+                        As you've explored this personal encyclopedia, you've witnessed a commitment to documenting life's 
+                        important moments. Thank you for taking the time to view, read, and engage with this collection. 
+                        Your comments and interactions make this more than just a personal archive—they make it a shared experience.
+                    </p>
+                </div>
+                <div class="comment-section">
+                    <h3><i class="fas fa-comments"></i> Discussion</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="Final thoughts?" class="comment-input">
+                        <button class="post-btn"><i class="fas fa-paper-plane"></i> Post</button>
+                    </div>
+                    <div class="comments-list"></div>
+                </div>
+            </article>
+
+            <footer class="page-footer">
+                <p>&copy; 2025 luuk_2.0 Personal Encyclopedia. All rights reserved.</p>
+                <p>Last updated: October 8, 2025</p>
+            </footer>
         </main>
-
-        <footer>
-            <p>&copy; 2025 Instagram Clone. All rights reserved.</p>
-        </footer>
     </div>
 
     <script src="script.js"></script>
