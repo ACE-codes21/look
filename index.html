@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone - luuk_2.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>luuk_2.0</h1>
+            <p class="subtitle">Welcome to my Instagram page!</p>
+        </header>
+
+        <main>
+            <section class="profile">
+                <div class="profile-info">
+                    <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Profile Picture" class="profile-pic">
+                    <h2>luuk_2.0</h2>
+                    <p>Bio: Just a person sharing moments.</p>
+                </div>
+            </section>
+
+            <section class="media-gallery">
+                <h2>Media</h2>
+                <div class="media-container">
+                    <img src="./public/assets/WhatsApp Image 2025-10-06 at 3.04.43 PM.jpeg" alt="Media Image" class="media-item">
+                    <div class="media-comments">
+                        <h3><i class="fas fa-comment"></i> Comments</h3>
+                        <div class="comment-form-mini">
+                            <input type="text" placeholder="Add a comment..." class="comment-input-mini">
+                            <button class="post-btn-mini"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                        <div class="comments-mini-list"></div>
+                    </div>
+                </div>
+
+                <div class="media-container">
+                    <video controls class="media-item">
+                        <source src="./public/assets/VID-20251006-WA0045.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="media-comments">
+                        <h3><i class="fas fa-comment"></i> Comments</h3>
+                        <div class="comment-form-mini">
+                            <input type="text" placeholder="Add a comment..." class="comment-input-mini">
+                            <button class="post-btn-mini"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                        <div class="comments-mini-list"></div>
+                    </div>
+                </div>
+
+                <!-- Additional media items can be added here -->
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Instagram Clone. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
